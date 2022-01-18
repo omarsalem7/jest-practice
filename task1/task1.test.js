@@ -1,6 +1,5 @@
 const stringLength = require('./task1');
 
-
 test('"hello" should be 5', () => {
     expect(stringLength('hello')).toBe(5);
 });
