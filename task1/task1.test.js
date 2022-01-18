@@ -1,5 +1,20 @@
 const stringLength = require('./task1');
 
-test('adds 1 + 2 to equal 3', () => {
-    expect(stringLength('hellosdas4')).toBe(10);
+
+test('"hello" should be 5', () => {
+    expect(stringLength('hello')).toBe(5);
 });
+test('"omar" should be 4', () => {
+    expect(stringLength('omar')).toBe(4);
+});
+test('more than expected', () => {
+    expect(() => {
+        stringLength('ocdsasadqwtopus');
+    }).toThrow();
+});
+test('empty', () => {
+    expect(() => {
+        stringLength('');
+    }).toThrow();
+});
+
